@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Orbitron'); /*Orbitron*/
+@import url('https://fonts.googleapis.com/css?family=Syncopate');/*Syncopate*/
+@import url('https://fonts.googleapis.com/css?family=Acme');/*Acme*/
+@import url('https://fonts.googleapis.com/css?family=Play');/*Acme*/
+
+body{
+    margin: 0px;
+    background-color: #000;
+    font-family: 'Orbitron',sans-serif;
+}
+
+.backgroundVideo{
+    height: auto;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+div#interface{
+    color: #fff;
+    background-color: #505050;
+    width: 900px;
+    height: 1500px;
+    margin: -10px auto 0px auto;
+    position: relative;
+}	
+
+section#centro{
+    display: block;
+    border-right: 1px #fff solid;
+    height: 1000px;
+    width: 500px;
+    float: left;
+    margin: 5px 0px 5px 0px;
+}
+
+
+section#informacoes{
+    width: auto;
+    height: 270px;
+    clear: both;
+    border-top: 1px solid #fff;
+}
+
+section#centro{
+    display: block;
+    border-right: 1px #fff solid;
+    height: 1000px;
+    width: 500px;
+    float: left;
+    margin: 5px 0px 5px 0px;
+}
+
+section#centro h1#titulo{
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'Orbitron',sans-serif;
+}
+
+section#centro ul{
+    list-style: none;
+}
+
+section#centro h1{
+    font-size: 20pt;
+    text-align: left;
+    font-family: 'Acme', sans-serif;
+}
+
+section#centro h3.data{
+    font-family: Arial, sans-serif;
+    text-align: right;
+    font-size: 12px;
+    padding:5px;
+    color: rgb(182, 182, 182);
+    margin: -30px 0px 0px 0px;
+}
+
+section#centro p{
+    font-size: 12pt;
+    margin-right: 20px;
+    font-family: arial,sans-serif;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+aside#direita{
+    display: block;
+    height: 1000px;
+    width: 200px;
+    float: left;
+    margin: 5px 0px 5px 0px;
+}
+
+aside#direita h1{
+    font-size: 15pt;
+    text-align: center;
+}
+
+section#informacoes h1{
+    text-align: center;
+    font-size: 30pt;
+    margin: 0px;
+    padding: 5px;
+}
+
+section#informacoes h2{
+    text-align: left;
+    font-size: 20pt;
+    margin: 0px;
+    padding: 5px;
+}
+
+section#informacoes p{
+    text-indent: 40px;
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+ol.clientes{
+    list-style: none;
+    position: relative;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-weight: 100;
+}
+
+ol.clientes li{
+    text-align: center;
+}
+
+ol.clientes figure{
+    margin: -10px 0px 0px -40px;
+    width: 190px;
+}
+
+ol.clientes figcaption{
+    margin: -30px 0px 10px 0px;
+    font-size: 18pt;
+}

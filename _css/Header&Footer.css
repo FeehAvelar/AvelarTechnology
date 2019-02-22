@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+header#cabecalho{
+	border-bottom: 1px #fff solid;
+	height: 150px;
+	position: relative;	
+	background: url(../_imagens/LogoClaro200.png) no-repeat 5px 10px;
+	text-transform: uppercase;
+}
+
+ol#menuPrincipal{
+	list-style: none;
+	position:absolute;
+	top: 50px;
+	left: 180px;
+}
+
+ol#menuPrincipal li{
+	display: inline-block;
+	font-size: 10pt;
+	text-align: center;
+	padding: 10px;
+	margin: 3px;
+	border: 1px #fff solid;
+	border-radius: 5px;
+	min-width: 100px;
+}
+
+ol#menuPrincipal li:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+
+footer#rodape{
+	display:block;
+	clear:both;
+	border-top:1px #fff solid;
+	height: 100px;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+}
+footer#rodape h1{
+	display: block;
+	text-align: center; 
+	font-size: 13pt;
+}
+footer#rodape h2{
+	display: block;
+	text-align: center; 
+	font-size: 8pt;
+	color: rgba(299,299,299,0.5);
+}
+footer#rodape a{
+	color: #ffffff;
+	text-decoration: none;
+}
+footer#rodape a:hover{
+	background-color: rgba(0,0,0,0.4);
+}	
