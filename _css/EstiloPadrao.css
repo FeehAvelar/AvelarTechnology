@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron'); /*Orbitron*/
 @import url('https://fonts.googleapis.com/css?family=Syncopate');/*Syncopate*/
 @import url('https://fonts.googleapis.com/css?family=Acme');/*Acme*/
-@import url('https://fonts.googleapis.com/css?family=Play');/*Acme*/
+@import url('https://fonts.googleapis.com/css?family=Play');/*Play*/
 
 body{
     margin: 0px;
@@ -44,7 +44,6 @@ section#centro{
     float: left;
     margin: 5px 0px 5px 0px;
 }
-
 
 section#informacoes{
     width: auto;

@@ -10,7 +10,30 @@
 		</style>	
 		<link rel="stylesheet" type="text/css" href="_css/Header&Footer.css">
 		<link rel="stylesheet" type="text/css" href="_css/AsideEsquerda.css">
-		<link rel="stylesheet" href="./_css/EstiloPadrao.css" type="text/css">		
+		<link rel="stylesheet" href="./_css/EstiloPadrao.css" type="text/css">	
+		
+		<!----------- INDENTIFICAÇÃO PARA SABER SE É MOVEL OU DESKTOP  ----------->
+		<script>            
+			var ua = navigator.userAgent.toLowerCase();
+			var uMobile = '';
+			// === REDIRECIONAMENTO PARA iPhone, Windows Phone, Android, etc. ===
+			// Lista de substrings a procurar para ser identificado como mobile WAP
+			uMobile = '';
+			uMobile += 'iphone;ipod;windows phone;android;iemobile 8';
+			// Sapara os itens individualmente em um array
+			v_uMobile = uMobile.split(';');
+			// percorre todos os itens verificando se eh mobile
+			var boolMovel = false;
+			for (i=0;i<=v_uMobile.length;i++){
+				if (ua.indexOf(v_uMobile[i]) != -1){
+					boolMovel = true;
+				}
+			}
+			if (boolMovel == true){
+				location.href='./_mob/index.html';
+			}   
+		</script>
+		
 	</head>
 	
 	<body>
@@ -109,13 +132,22 @@
 					<ul>
 						<li>
 						<h1>
+							Inicio do Mobile 
+						</h1>
+						<h3 class="data"><span style="text-align: right">
+							18/03/2019
+						</span></h3>
+						<p>Inicio da implementação da versão mobile do site.</p>
+		
+						<h1>
 							Continuação da Construção.
 						</h1>
 						<h3 class="data"><span style="text-align: right">24/02/2018</span></h3>
 						<p>Implementação do HTML do site no github, adicionado o link do github do Felipe Avelar na área de sobre</p>
 						<p>Inicio da implementação da área de games, com imagens totalmente ilustrativas. </p>
+		
 						<h1>Construção</h1>						
-						<h3 class="data"><span style="text-align: right">19/02/2018</span></h3>
+						<h3 class="data"><span style="text-align: right">19/02/2019</span></h3>
 						<p><b><em>Avelar Technology</em></b> está começando a possuir um site. Futuramente teremos novidade toda segunda-feira, mas  
 							por enquanto pode ser que haja atualizações no site qualquer dia.
 							<br></p>

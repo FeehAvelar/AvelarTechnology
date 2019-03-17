@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Mobile AT</title>
+        <link rel="icon" href="../_imagens/IconeEscuro100.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../_css/_mobile/padrao.css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!----------- INDENTIFICAÇÃO PARA SABER SE É MOVEL OU DESKTOP  ----------->
+        <script>            
+            var ua = navigator.userAgent.toLowerCase();
+            var uMobile = '';
+            // === REDIRECIONAMENTO PARA iPhone, Windows Phone, Android, etc. ===
+            // Lista de substrings a procurar para ser identificado como mobile WAP
+            uMobile = '';
+            uMobile += 'iphone;ipod;windows phone;android;iemobile 8';
+            // Sapara os itens individualmente em um array
+            v_uMobile = uMobile.split(';');
+            // percorre todos os itens verificando se eh mobile
+            var boolMovel = false;
+            for (i=0;i<=v_uMobile.length;i++){
+                if (ua.indexOf(v_uMobile[i]) != -1){
+                    boolMovel = true;
+                }
+            }
+            if (boolMovel == false){
+                location.href='../index.html';
+            }   
+        </script>
+    
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-light"  style="background-color: #4752ec;">
+            <a class="navbar-brand" data-toggle="tooltip" title="Home" href="./index.html">
+                <img src="../_imagens/IconeClaro100.ico" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" data-toggle="tooltip" title="Desktop" href="#">
+                <img src="../_imagens/_mobile/_nav/pc.png" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" data-toggle="tooltip" title="Website" href="#">
+                <img src="../_imagens/_mobile/_nav/web.png" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" data-toggle="tooltip" title="Games" href="#">
+                <img src="../_imagens/_mobile/_nav/jogos.png" width="30" height="30" alt="">
+            </a>
+            <a class="navbar-brand" data-toggle="tooltip" title="Contato" href="#">
+                <img src="../_imagens/_mobile/_nav/Contato.png" width="30" height="30" alt="">
+            </a>
+        </nav>
+        <section id="Principal">
+            <h1>Notícias Principais</h1>
+            <article id="Noticia">
+                <h1>Inicio do Mobile</h1>
+                <p>Inicio da implementação da versão mobile do site.</p>
+                <h6 class="data">17/03/19</h6>
+            </article>
+            <article id="Noticia">
+                <h1>Continuação da Construção.</h1>
+                <p>Implementação do HTML do site no github, adicionado o link do github do Felipe Avelar na área de sobre
+                   Inicio da implementação da área de games, com imagens totalmente ilustrativas. </p>
+                <h6 class="data">24/02/19</h6>
+            </article>
+        </section>
+        <!--Secao Sobre-->
+        <section id="sSobre">
+            <h1>Sobre</h1>
+            <article id="sobre">
+                <h1>Objetivos Pessoais</h1>
+                <p>Esse site foi desenvolvido com a inteção de divulgar e controlar os projetos feito por
+                    <em>Felipe Avelar</em>. Também possuí a inteção de mostrar um portifólio próprio de desenvolvimento de Sistemas. </p>
+            </article>
+            <article id="sobre">
+                <h1>Objetivos Tecnologicos</h1>
+                <p>	
+                    Como intusiastas da <em>tecnologia</em> &sbquo; possuímos a inteção de planejar e desenvolver aplicativos, sites e 
+					jogos, gratuitos e pagos em várias platafromas diferentes.
+				</p>
+				<p>Deseja conhecer melhor sobre nós? &nbsp; <a href="https://github.com/FeehAvelar" target="_blank">
+				<em> https://github.com/FeehAvelar</em></a></p>            
+            </article>
+        </section>           
+    </body>
+</html>
