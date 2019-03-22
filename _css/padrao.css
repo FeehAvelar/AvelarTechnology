@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Orbitron'); /*Orbitron*/
-@import url('https://fonts.googleapis.com/css?family=Syncopate');/*Syncopate*/
+/*@import url('https://fonts.googleapis.com/css?family=Syncopate'); Syncopate*/
 @import url('https://fonts.googleapis.com/css?family=Acme');/*Acme*/
 @import url('https://fonts.googleapis.com/css?family=Play');/*Play*/
 
@@ -10,7 +10,7 @@ body{
     font-family: 'Orbitron',sans-serif;
 }
 
-.backgroundVideo{
+body .backgroundVideo{
     height: auto;
     position: fixed;
     right: 0;
@@ -22,7 +22,7 @@ body{
     background: cover;
 }
 
-a{
+body a{
     text-decoration: none;
     color: #fff;
 }
@@ -36,22 +36,42 @@ div#interface{
     position: relative;
 }	
 
-section#centro{
+/*---Aside Left*/
+aside#esquerda{
     display: block;
-    border-right: 1px #fff solid;
+    border-right: 1px rgb(255, 255, 255) inset;
     height: 1000px;
-    width: 500px;
+    width: 190px;
     float: left;
     margin: 5px 0px 5px 0px;
 }
 
-section#informacoes{
-    width: auto;
-    height: 300px;
-    clear: both;
-    border-top: 1px solid #fff;
+aside#esquerda h1{
+    font-size: 15pt;
+    text-align: center;
 }
 
+aside#esquerda ol{	
+    list-style: none;
+    position:relative;
+
+}
+
+aside#esquerda ol li{
+    text-align: center;
+}
+
+aside#esquerda figure.tecnologias{
+    margin: -10px 0px 0px -40px;
+    width: 190px;
+}
+
+aside#esquerda figure.tecnologias figcaption{
+    margin: -40px 0px 10px 0px;
+    font-size: 20pt;
+}
+
+/*---Section center---*/
 section#centro{
     display: block;
     border-right: 1px #fff solid;
@@ -67,14 +87,12 @@ section#centro h1#titulo{
     font-family: 'Orbitron',sans-serif;
 }
 
-section#centro ul{
-    list-style: none;
-}
-
 section#centro h1{
     font-size: 20pt;
     text-align: left;
     font-family: 'Acme', sans-serif;
+    padding-left: 10px;
+    font-weight: 600;
 }
 
 section#centro h3.data{
@@ -92,7 +110,10 @@ section#centro p{
     font-family: arial,sans-serif;
     text-indent: 40px;
     text-align: justify;
+    padding: 5px;
 }
+
+/*---Aside Right---*/
 
 aside#direita{
     display: block;
@@ -105,26 +126,6 @@ aside#direita{
 aside#direita h1{
     font-size: 15pt;
     text-align: center;
-}
-
-section#informacoes h1{
-    text-align: center;
-    font-size: 30pt;
-    margin: 0px;
-    padding: 5px;
-}
-
-section#informacoes h2{
-    text-align: left;
-    font-size: 20pt;
-    margin: 0px;
-    padding: 5px;
-}
-
-section#informacoes p{
-    text-indent: 40px;
-    margin: 0px 10px;
-    padding: 5px;
 }
 
 ol.clientes{
@@ -147,4 +148,32 @@ ol.clientes figure{
 ol.clientes figcaption{
     margin: -30px 0px 10px 0px;
     font-size: 18pt;
+}
+
+/*---Section Sobre---*/
+section#informacoes{
+    width: auto;
+    height: 300px;
+    clear: both;
+    border-top: 1px solid #fff;
+}
+
+section#informacoes h1{
+    text-align: center;
+    font-size: 30pt;
+    margin: 0px;
+    padding: 5px;
+}
+
+section#informacoes h2{
+    text-align: left;
+    font-size: 20pt;
+    margin: 0px;
+    padding: 5px;
+}
+
+section#informacoes p{
+    text-indent: 40px;
+    margin: 0px 10px;
+    padding: 5px;
 }
